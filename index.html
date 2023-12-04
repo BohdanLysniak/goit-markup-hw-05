@@ -462,7 +462,16 @@
             </li>
           </ul>
         </div>
-      </div>
+        <div class="subscribe-field">
+          <label  class="subscribe-field-label" for="user-email-subscribe" >Subscribe</label>
+          <form class="subscribe-form">
+          <input class="subscribe-field-input" id="user-email-subscribe" name="user-email-subscribe" type="email" placeholder="E-mail" required>
+          <button class="subscribe-field-btn" type="submit">Subscribe<svg class="subscribe-field-icon" width="24" height="24"><use href="./images/icons.svg#icon-send"></use></svg></button>
+          </form>
+        </div>
+      </div><svg>
+        <use></use>
+      </svg>
     </footer>
 
     <div class="backdrop is-open">
@@ -473,7 +482,8 @@
           </svg>
         </button>
         <p class="review-form-description">Leave your contacts and we will call you back</p>
-        <form action="review-form">
+        <form class="review-form">
+          <div class="review-form-field">
           <div class="review-form-field-wrapper">
             <label class="review-form-field-label" for="user-name" >Name</label>
             <div class="review-form-input-wrapper"><input class="review-form-field-input" id="user-name" name="user-name" type="text" pattern="[a-zA-Zа-яА-ЯіІіЇєЄ']+" title="Bohdan" required >
@@ -503,6 +513,7 @@
           <div class="review-form-field-wrapper">
             <label class="review-form-field-label" for="user-comment" >Comment</label>
             <textarea class="review-form-comment" id="user-comment" name="user-comment" placeholder="Enter text" required></textarea>
+          </div>
           </div>
           <div class="review-form-checkbox-wrapper">
             <input class="review-form-checkbox visually-hidden" id="privacy-policy" name="privacy-policy" type="checkbox" value="true" required > 
