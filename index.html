@@ -505,10 +505,12 @@
             <textarea class="review-form-comment" id="user-comment" name="user-comment" placeholder="Enter text" required></textarea>
           </div>
           <div class="review-form-checkbox-wrapper">
-            <input class="review-form-checkbox" id="privacy-policy" name="privacy-policy" type="checkbox" value="true" required > 
-            <label class="review-form-checkbox-label" for="privacy-policy" >I accept the terms and conditions of the <a href="" class="link-privacy-policy">Privacy Policy</a></label>
-            <button class="review-form-submit-btn" type="submit">Send</button>
+            <input class="review-form-checkbox visually-hidden" id="privacy-policy" name="privacy-policy" type="checkbox" value="true" required > 
+            <label class="review-form-checkbox-label" for="privacy-policy" ><span class="review-form-own-checkbox"><svg class="review-form-own-checkbox-icon" width="10" height="8">
+              <use href="./images/icons.svg#icon-check-mark"></use>
+            </svg></span>I accept the terms and conditions of the <a href="" class="link-privacy-policy">Privacy Policy</a></label>
           </div>
+            <button class="review-form-submit-btn" type="submit">Send</button>
         </form>
     </div>
   </body>

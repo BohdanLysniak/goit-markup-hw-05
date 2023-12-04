@@ -484,6 +484,9 @@ p {
 }
 
 .modal-close-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 24px;
   height: 24px;
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -589,4 +592,44 @@ p {
   font-weight: 400;
   line-height: 1.17;
   letter-spacing: 0.04em;
+}
+
+.review-form-checkbox-wrapper {
+  margin-top: 8px;
+}
+
+.review-form-own-checkbox {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 16px;
+  height: 16px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 2px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.review-form-own-checkbox-icon {
+  opacity: 0;
+}
+
+.review-form-checkbox:focus
+  + .review-form-checkbox-label
+  > .review-form-own-checkbox {
+  border-color: #4d5ae5;
+}
+
+.review-form-checkbox:checked
+  + .review-form-checkbox-label
+  > .review-form-own-checkbox {
+  background-color: #404bbf;
+  border-color: #404bbf;
+}
+
+.review-form-checkbox:checked
+  + .review-form-checkbox-label
+  .review-form-own-checkbox-icon {
+  opacity: 1;
+  fill: #f4f4fd;
 }
