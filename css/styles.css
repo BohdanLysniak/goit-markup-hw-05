@@ -604,7 +604,11 @@ p {
   margin-bottom: 8px;
 }
 
-.review-form-field-wrapper-last {
+.review-form-field-wrapper {
+  margin-bottom: 16px;
+}
+
+.last {
   margin-bottom: 16px;
 }
 
