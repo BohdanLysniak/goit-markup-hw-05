@@ -600,12 +600,8 @@ p {
   margin-bottom: 16px;
 }
 
-.review-form-field {
-  margin-bottom: 8px;
-}
-
 .review-form-field-wrapper {
-  width: 100%;
+  margin-bottom: 8px;
 }
 
 .review-form-field-label {
